@@ -1,16 +1,14 @@
-# authenticated_notes
+# Authenticated Notes
 
-A new Flutter project.
+A Flutter notes app with Firebase authentication. It includes login, registration, and forgot-password screens (~11KB) plus a Firestore service layer for storing and retrieving notes per user. The auth flow overlaps heavily with the `login_app` repo — this one adds the notes CRUD layer on top.
 
-## Getting Started
+**Tech stack:** Flutter / Dart, Firebase (Auth + Firestore)
 
-This project is a starting point for a Flutter application.
+**How to run:**
+```
+flutter pub get
+flutter run
+```
+Note: you need a `google-services.json` (Android) / Firebase config with your own project settings before auth will work.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Status:** Auth-tutorial build extended with notes functionality; functional but unfinished.
